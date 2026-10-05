@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Rounded Athletic Background -->
+  <rect width="64" height="64" rx="18" fill="#0A0B0D"/>
+  
+  <!-- Energetic Pulse Glow Ring -->
+  <circle cx="32" cy="32" r="28" stroke="#FF4900" stroke-width="2" stroke-opacity="0.4" stroke-dasharray="6 4"/>
+  
+  <!-- Sport Lightning / Dynamic Athletic Monogram R -->
+  <path d="M22 16H34C40.6274 16 46 21.3726 46 28C46 33.454 42.3614 38.0617 37.3822 39.5126L45.5 48H36.5L29 39H22V48H16V16H22ZM22 33H34C36.7614 33 39 30.7614 39 28C39 25.2386 36.7614 23 34 23H22V33Z" fill="#FF4900"/>
+  
+  <!-- Neon Lime Energy Beacon Dot -->
+  <circle cx="45" cy="19" r="4.5" fill="#CDFF00"/>
+</svg>
