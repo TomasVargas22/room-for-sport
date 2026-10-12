@@ -131,7 +131,7 @@ const dict = {
         name: 'Membresía Corporate Team',
         price: '$45',
         period: '/ colaborador / mes',
-        desc: 'Salas modulares insonorizadas en tu sede, entrenadores titulados in-office, torneos inter-empresa y telemetría de salud laboral.',
+        desc: 'Salas modulares insonorizadas en tu sede, entrenadores titulados in-office, torneos inter-empresa y estadísticas de salud laboral.',
         cta: 'Solicitar Acceso Corporativo'
       }
     },
@@ -248,7 +248,7 @@ const dict = {
         name: 'Corporate Team Membership',
         price: '$45',
         period: '/ employee / month',
-        desc: 'Turnkey acoustic sports studios in your headquarters, resident coaches, inter-company tournaments, and HR health telemetry.',
+        desc: 'Turnkey acoustic sports studios in your headquarters, resident coaches, inter-company tournaments, and employee health analytics.',
         cta: 'Request Corporate Access'
       }
     },
@@ -264,13 +264,13 @@ const dict = {
       }
     },
     dashboard: {
-      badge: 'Performance Telemetry',
+      badge: 'Progress & Activity',
       welcome: 'Welcome back, Tomás Kax!',
       sub: 'Your personal athletic command center. Log today’s session, review recovery readiness, and calibrate weekly targets.',
       widget1Title: 'My Training Diary',
       widget1Sub: 'Log Today’s Workout',
       widget2Title: 'Physical Progress & Goals',
-      widget2Sub: 'Biometrics, Streak & Recovery',
+      widget2Sub: 'Activity Streak & Recovery',
       widget3Title: 'Personalization Settings',
       widget3Sub: 'Weekly Targets & Preferences'
     },
@@ -368,7 +368,7 @@ const corporateTestimonials = [
   }
 ];
 
-// OFFICIAL SPECIFICATION: 7 SERVICES & ACTIVITIES (Team Sports, Individual Sports, Workouts)
+// Catálogo de disciplinas deportivas y actividades
 const servicesData = [
   // Team Sports
   {
@@ -455,8 +455,8 @@ const servicesData = [
       'Partner target floating serve reception drill (15 min)',
       'K1 Attack phase: Pass -> Set -> Cross-court Spike (20 min)'
     ],
-    features: ['Red con tensor micrométrico regulable', 'Suelo elástico vinílico con alto retorno de energía', 'Sensores de altura de salto vertical', 'Clínicas para todos los niveles'],
-    featuresEn: ['Precision micrometer tension adjustable net', 'High energy-return vinyl sports surface', 'Vertical jump height telemetry sensors', 'Coached clinics for all skill levels']
+    features: ['Red con altura regulable', 'Suelo deportivo con absorción de impacto', 'Sensores de altura de salto vertical', 'Clases para todos los niveles'],
+    featuresEn: ['Height-adjustable competition net', 'Shock-absorbing vinyl sports surface', 'Vertical jump height sensors', 'Coached clinics for all skill levels']
   },
   // Individual Sports
   {
@@ -466,27 +466,27 @@ const servicesData = [
     nameEs: 'Natación a Contracorriente',
     categoryName: 'Individual Sports',
     categoryNameEs: 'Deportes Individuales',
-    badge: 'Cero Impacto Articular',
-    badgeEn: 'Zero Joint Impact',
+    badge: 'Bajo Impacto Articular',
+    badgeEn: 'Low Joint Impact',
     intensity: 'Moderada / Alta',
     intensityEn: 'Moderate / High',
     duration: '45 min',
     calories: '510 kcal',
     image: 'https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=800&q=80',
-    description: 'Canales de nado a contracorriente con flujo continuo ajustable. Telemetría de brazadas por minuto, ritmo cardíaco submarino y corrección biomecánica con espejo de fondo.',
-    descriptionEn: 'Endless resistance swimming flumes with adjustable laminar flow. Stroke cadence telemetry, underwater heart-rate tracking, and biomechanical review.',
+    description: 'Canales de nado con flujo continuo ajustable. Medición de brazadas por minuto, ritmo cardíaco y corrección técnica con espejo de fondo.',
+    descriptionEn: 'Endless swimming pools with adjustable flow. Stroke cadence tracking, heart-rate monitoring, and technique review.',
     drills: [
-      'Calentamiento aeróbico a velocidad de crucero 2.5 km/h (10 min)',
-      'Series de brazada con palas y pull buoy a 4.0 km/h (20 min)',
-      'Intervalos HIIT de sprint submarino y recuperación activa (15 min)'
+      'Calentamiento aeróbico a velocidad suave (10 min)',
+      'Series de brazada con palas y pull buoy (20 min)',
+      'Intervalos de velocidad y descanso activo (15 min)'
     ],
     drillsEn: [
-      'Aerobic warm-up at 2.5 km/h laminar cruising speed (10 min)',
-      'Pull-buoy and paddle stroke intervals at 4.0 km/h (20 min)',
-      'HIIT flume sprint bursts with active float recovery (15 min)'
+      'Aerobic warm-up at steady cruising pace (10 min)',
+      'Pull-buoy and paddle stroke intervals (20 min)',
+      'Sprint intervals with gentle swimming recovery (15 min)'
     ],
-    features: ['Flujo laminar regulable de 0 a 10 km/h', 'Agua salina ionizada sin olor a cloro', 'Cámara sumergida para análisis biomecánico', 'Pulsómetro óptico acuático'],
-    featuresEn: ['Laminar flow regulator from 0 to 10 km/h', 'Saltwater ionization with zero chlorine scent', 'Submerged high-speed biomechanics camera', 'Optical aquatic heart rate telemetry']
+    features: ['Flujo de agua regulable de 0 a 10 km/h', 'Agua tratada sin olor fuerte a cloro', 'Cámara sumergida para análisis de brazada', 'Pulsómetro acuático'],
+    featuresEn: ['Water flow regulator from 0 to 10 km/h', 'Clean water treatment with low chlorine scent', 'Submerged camera for stroke analysis', 'Underwater heart rate tracking']
   },
   {
     id: 'chess',
@@ -578,7 +578,7 @@ const servicesData = [
   }
 ];
 
-// OFFICIAL SPECIFICATION: 7 SPORTS TIPS & EXPERT ADVICE ARTICLES
+// Artículos y consejos de entrenamiento y salud
 const tipsArticles = [
   // Performance & Training
   {
@@ -605,7 +605,7 @@ const tipsArticles = [
     contentEn: [
       'Sports neuroscience proves that vividly rehearsing physical movement activates the exact same motor cortex neural circuits as physical execution.',
       'Using functional magnetic resonance imaging (fMRI), neuroscientists verified that repeated visualization reinforces synaptic pathways without inducing physical muscular fatigue.',
-      '3-Step Protocol for Your Session:\n1. Sensory Anchoring (1 min): Close your eyes, breathe deeply, and recreate the texture of the ball in your hands or the court acoustics.\n2. First-Person Execution (2 min): Visualize the shot or sprint through your own eyes, focusing on wrist flick angle and kinetic balance.\n3. Pressure Simulation (1 min): Picture an adverse crunch-time scenario (a critical free throw) and imagine yourself executing with absolute calm.',
+      '3-Step Protocol for Your Session:\n1. Sensory Anchoring (1 min): Close your eyes, breathe deeply, and recreate the texture of the ball in your hands or the court acoustics.\n2. First-Person Execution (2 min): Visualize the shot or sprint through your own eyes, focusing on wrist flick angle and body balance.\n3. Pressure Simulation (1 min): Picture an adverse crunch-time scenario (a critical free throw) and imagine yourself executing with absolute calm.',
       'Conclusion: Physical conditioning gives you the tools to compete; mental conditioning determines who wins.'
     ]
   },
@@ -622,17 +622,17 @@ const tipsArticles = [
     authorRoleEs: 'Especialista en Fisioterapia Deportiva',
     date: 'Updated 2026',
     dateEs: 'Actualizado 2026',
-    excerpt: 'Los músculos no crecen durante el esfuerzo; se micro-rompen al entrenar y se hipertrofian en el descanso reparador. Domina la curva de supercompensación.',
-    excerptEn: 'Muscles do not grow in the gym; they tear down in training and rebuild during systemic rest. Master the active recovery equation.',
+    excerpt: 'El descanso no es perder el tiempo: es cuando el cuerpo asimila el esfuerzo y reconstruye la masa muscular. Aprende a descansar bien.',
+    excerptEn: 'Muscles do not grow in the gym; they rebuild during rest. Master the active recovery habits.',
     content: [
-      'Cada sesión de alta intensidad genera microrroturas fibrilares y agota las reservas de glucógeno. Si no otorgas entre 36 y 48 horas de recuperación al grupo muscular estimulado, caes en sobreentrenamiento crónico.',
-      'Diferencia entre Descanso Pasivo y Recuperación Activa:\n• Descanso Pasivo: Cero actividad física exigente. Indispensable tras torneos extenuantes o semanas de volumen máximo.\n• Recuperación Activa: Trabajo cardiovascular en Zona 1 (menos del 60% de tu frecuencia cardíaca máxima), liberación miofascial con foam roller o natación suave. Acelera la recirculación sanguínea y la eliminación de desechos metabólicos sin daño tisular.',
-      'El papel del Sueño Profundo: El pico de secreción de hormona del crecimiento (GH) ocurre durante la fase de sueño de ondas lentas (Delta). Asegura de 7 a 9 horas en una habitación fresca y totalmente oscura.'
+      'Cada sesión intensa exige mucho a los músculos y gasta las reservas de energía. Si no das al menos 36 a 48 horas de descanso antes de volver a exigir al mismo grupo muscular, corres el riesgo de sobreentrenarte o lesionarte.',
+      'Diferencia entre Descanso Pasivo y Recuperación Activa:\n• Descanso Pasivo: Reposo total sin actividad exigente. Indispensable tras torneos intensos o semanas de alta carga física.\n• Recuperación Activa: Ejercicio suave como caminata, estiramientos o natación ligera. Ayuda a mejorar la circulación y relajar los músculos sin acumular fatiga.',
+      'La importancia de Dormir Bien: Durante el sueño profundo el cuerpo repara los tejidos y repone energías. Procura dormir entre 7 y 9 horas cada noche en un ambiente fresco y oscuro.'
     ],
     contentEn: [
-      'Every high-intensity session produces microscopic myofibrillar tears and depletes muscular glycogen. Without 36 to 48 hours of recovery, you invite overtraining syndrome.',
-      'Passive Rest vs. Active Recovery:\n• Passive Rest: Zero rigorous physical output. Crucial following taxing tournaments or peak volume blocks.\n• Active Recovery: Zone 1 cardiovascular work (<60% max HR), foam rolling, or gentle swimming flume laps. Accelerates metabolic clearance without muscle damage.',
-      'The Role of Slow-Wave Sleep: Growth hormone (GH) secretion peaks during Delta deep sleep. Prioritize 7 to 9 hours in a cool, pitch-dark room.'
+      'Every intense workout stresses your muscles and depletes energy stores. Without 36 to 48 hours of recovery before training the same muscle group again, you risk fatigue or injury.',
+      'Passive Rest vs. Active Recovery:\n• Passive Rest: Full rest with zero strenuous output. Essential after intense tournaments or peak training weeks.\n• Active Recovery: Low-intensity activity like walking, light swimming, or gentle mobility work. Improves blood flow without adding muscular stress.',
+      'The Importance of Sleep: Deep sleep is when your body repairs tissue and replenishes energy. Aim for 7 to 9 hours each night in a quiet, cool room.'
     ]
   },
   {
@@ -762,7 +762,7 @@ const tipsArticles = [
 ];
 
 export default function RoomForSportDribbble() {
-  // Emil Kowalski & Apple-grade scroll animation physics variants
+  // Variantes de animación para transiciones con Framer Motion
   const staggerContainer = {
     hidden: { opacity: 0 },
     visible: {
@@ -829,7 +829,7 @@ export default function RoomForSportDribbble() {
 
   // Modal states for interactive buttons
   const [activeModal, setActiveModal] = useState(null); 
-  // 'booking' | 'onboarding' | 'coaching' | 'event' | 'rooms' | 'roi' | 'protocol' | 'appDemo' | 'planProposal' | 'brandFilm'
+  // 'booking' | 'onboarding' | 'coaching' | 'event' | 'rooms' | 'roi' | 'protocol' | 'appDemo' | 'planProposal'
   
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [selectedStudio, setSelectedStudio] = useState('hiit');
@@ -902,7 +902,7 @@ export default function RoomForSportDribbble() {
   // 5. NAVEGACIÓN MÓVIL (Mobile Menu State)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // SERVICES & ACTIVITIES INTERACTIVE STATE (Hick's Law 4 filter pills)
+  // Filtro de actividades deportivas
   const [serviceFilter, setServiceFilter] = useState('all'); // 'all' | 'team' | 'individual' | 'workouts'
   const [selectedService, setSelectedService] = useState(null);
 
@@ -910,7 +910,7 @@ export default function RoomForSportDribbble() {
     setServiceFilter(filter);
   };
 
-  // SPORTS TIPS & RESOURCES STATE (Hick's Law 4 category tabs + reader modal)
+  // Filtro de artículos y consejos deportivos
   const [tipsCategory, setTipsCategory] = useState('all'); // 'all' | 'performance' | 'nutrition' | 'mindset'
   const [selectedArticle, setSelectedArticle] = useState(null);
 
@@ -1034,11 +1034,13 @@ export default function RoomForSportDribbble() {
     return () => clearTimeout(timer);
   }, []);
 
-  // 7. BOTÓN DE VOLVER ARRIBA (Back to Top State & Scroll Listener)
+  // 7. BOTÓN DE VOLVER ARRIBA & STICKY NAVBAR (Scroll Listener)
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const checkScroll = () => {
       setShowBackToTop(window.scrollY > 400);
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', checkScroll, { passive: true });
     return () => window.removeEventListener('scroll', checkScroll);
@@ -1268,11 +1270,11 @@ export default function RoomForSportDribbble() {
         : 'Self-powered curved treadmills engaging 30% more muscle fibers, low-impact elliptical trainers, and water rowers with gamified corporate leaderboards.',
       equipment: lang === 'es'
         ? ['Cintas autopropulsadas sin motor (cero consumo)', 'Remos de agua con resistencia fluídica', 'Cicloindoor interactivo con rutas virtuales', 'Monitores de ritmo cardíaco en tiempo real']
-        : ['Zero-power self-propelled curved treadmills', 'Fluid-resistance ash wood water rowers', 'Interactive indoor cycle trainers with virtual stages', 'Real-time telemetry heart rate monitors']
+        : ['Zero-power self-propelled curved treadmills', 'Fluid-resistance ash wood water rowers', 'Interactive indoor cycle trainers with virtual stages', 'Real-time heart rate monitors']
     }
   };
 
-  // Official Memberships & Pricing Plans (Comprehensive Enterprise Analysis Specification)
+  // Planes de membresía y precios
   const plans = [
     {
       id: 'rookie',
@@ -1282,7 +1284,7 @@ export default function RoomForSportDribbble() {
       target: lang === 'es' ? 'Participantes esporádicos y partidos informales' : 'Casual participants & community pick-up games',
       badge: lang === 'es' ? 'Entrada Gratuita' : 'Complimentary Entry',
       popular: false,
-      sla: lang === 'es' ? 'SLA: Foros comunitarios y soporte por email (24–48h)' : 'SLA: Community forum & email tickets (24–48h response)',
+      sla: lang === 'es' ? 'Soporte: Foros comunitarios y correo (24–48h)' : 'Support: Community forum & email tickets (24–48h)',
       description: lang === 'es' 
         ? 'Entrada libre al ecosistema deportivo para descubrir recintos cercanos, foros y unirse a partidos abiertos.' 
         : 'Free entry to the sports ecosystem to discover nearby facilities, forums, and join open pick-up games.',
@@ -1302,7 +1304,7 @@ export default function RoomForSportDribbble() {
       target: lang === 'es' ? 'Deportistas dedicados, corredores y jugadores de liga' : 'Dedicated sports enthusiasts, runners & league players',
       badge: lang === 'es' ? 'Atleta Verificado' : 'Verified Athlete',
       popular: false,
-      sla: lang === 'es' ? 'SLA: Soporte prioritario con chat en vivo en horario laboral' : 'SLA: Priority customer support with live chat',
+      sla: lang === 'es' ? 'Soporte: Chat de ayuda en horario laboral' : 'Support: Priority live chat during business hours',
       description: lang === 'es'
         ? 'Diseñado para atletas activos que entrenan semanalmente y demandan reservas ilimitadas sin anuncios.'
         : 'Built for regular athletes training weekly requiring unlimited streamlined booking and zero ads.',
@@ -1324,7 +1326,7 @@ export default function RoomForSportDribbble() {
       target: lang === 'es' ? 'Capitanes de equipo, organizadores de ligas y clubes' : 'Team captains, amateur league organizers & competitive squads',
       badge: lang === 'es' ? 'El Más Popular' : 'Captains Choice',
       popular: true,
-      sla: lang === 'es' ? 'SLA: Soporte dedicado 24/7 con respuesta garantizada <4h' : 'SLA: 24/7 dedicated support desk (4-hour guaranteed response)',
+      sla: lang === 'es' ? 'Soporte: Atención prioritaria para capitanes' : 'Support: Dedicated captain support desk',
       description: lang === 'es'
         ? 'Para capitanes y organizadores que dirigen plantillas, pizarras tácticas y división automática de gastos.'
         : 'For team captains and organizers running squads, tactical playbooks, and automated roster fee splits.',
@@ -1346,17 +1348,17 @@ export default function RoomForSportDribbble() {
       target: lang === 'es' ? 'Complejos deportivos, polideportivos municipales y cadenas de clubes' : 'Commercial sports complexes, municipal recreation & club chains',
       badge: lang === 'es' ? 'Recintos & Complejos' : 'Venue Operators',
       popular: false,
-      sla: lang === 'es' ? 'SLA: Ingeniero dedicado y disponibilidad de nube 99.99%' : 'SLA: Dedicated deployment engineer & 99.99% cloud uptime SLA',
+      sla: lang === 'es' ? 'Soporte: Asesoría técnica y soporte continuo' : 'Support: Technical setup & continuous support',
       description: lang === 'es'
-        ? 'Software integral marca blanca con motor de precios dinámicos para disparar la ocupación valle del 22% al 74%.'
-        : 'Complete white-label software with dynamic pricing engine to surge off-peak occupancy from 22% to 74%.',
+        ? 'Software integral para complejos deportivos con herramientas para optimizar la ocupación de canchas.'
+        : 'Comprehensive sports facility management software with tools to optimize court occupancy.',
       features: [
-        lang === 'es' ? 'Software integral marca blanca para gestión de instalaciones' : 'Complete white-label facility management software',
-        lang === 'es' ? 'Motor de precios dinámicos según demanda pico / valle' : 'Dynamic pricing algorithms based on peak/off-peak demand',
-        lang === 'es' ? 'Integración con torniquetes RFID, códigos QR y hardware TPV / POS' : 'Hardware integration: turnstiles, QR scanners, and POS',
-        lang === 'es' ? 'Control automatizado de iluminación LED y climatización HVAC' : 'Automated court LED lighting and HVAC schedule control',
-        lang === 'es' ? 'Informes contables, conciliación fiscal y facturación automática' : 'Comprehensive financial reporting, tax logs & auto-reconciliation',
-        lang === 'es' ? 'Acceso completo a REST API para portales y aplicaciones web' : 'RESTful API access for custom web portals & club apps'
+        lang === 'es' ? 'Software integral para gestión de instalaciones' : 'Complete facility management software',
+        lang === 'es' ? 'Gestión de precios y promociones según horarios' : 'Flexible pricing tools based on peak/off-peak demand',
+        lang === 'es' ? 'Integración con torniquetes, códigos QR y cobro en recepción' : 'Hardware integration: turnstiles, QR scanners, and front desk check-in',
+        lang === 'es' ? 'Control inteligente de iluminación y horarios' : 'Smart court lighting and schedule control',
+        lang === 'es' ? 'Informes contables y facturación automática' : 'Comprehensive financial reporting & invoicing',
+        lang === 'es' ? 'Acceso a API para vincular con páginas web del club' : 'API access for custom club websites'
       ],
       cta: lang === 'es' ? 'Contactar para Acceso Enterprise' : 'Contact Enterprise Team'
     }
@@ -1432,7 +1434,7 @@ export default function RoomForSportDribbble() {
   return (
     <div className={`min-h-screen ${isDarkMode ? 'dark bg-[#0A0B0E] text-[#F9FAFB]' : 'bg-[#F8F9FA] text-[#0A0B0D]'} font-sans antialiased overflow-x-hidden selection:bg-[#FF4900] selection:text-white transition-colors duration-300`}>
 
-      {/* 8. INITIAL SKELETON / BRAND SPLASH SCREEN (Zero FOUC & High-End Velocity) */}
+      {/* Pantalla de carga inicial con logo */}
       <AnimatePresence>
         {isLoadingInitial && (
           <motion.div
@@ -1518,13 +1520,18 @@ export default function RoomForSportDribbble() {
         </button>
       </div>
 
-      {/* HEADER / NAVIGATION */}
+      {/* HEADER / NAVIGATION (Sticky Glassmorphic Nav) */}
       <motion.header 
         initial={{ opacity: 0, y: -16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-        className="w-full max-w-7xl mx-auto px-6 py-5 flex items-center justify-between relative z-40"
+        className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+          isScrolled 
+            ? 'bg-white/85 dark:bg-[#0A0B0E]/85 backdrop-blur-xl border-b border-gray-200/60 dark:border-white/10 shadow-lg shadow-black/5 py-3.5' 
+            : 'bg-transparent py-5'
+        }`}
       >
+        <div className="w-full max-w-7xl mx-auto px-6 flex items-center justify-between">
         
         {/* Brand Logo */}
         <motion.div 
@@ -1611,7 +1618,7 @@ export default function RoomForSportDribbble() {
             <span>{isLoggedIn ? athleteName : (lang === 'es' ? 'Iniciar Sesión / Registro' : 'Log In / Sign Up')}</span>
           </button>
 
-          {/* Button-in-Button Header CTA */}
+          {/* Botón de reserva en cabecera */}
           <button 
             onClick={() => setActiveModal('booking')}
             className="hidden md:inline-flex btn-tactile-dark group cursor-pointer text-xs"
@@ -1631,6 +1638,7 @@ export default function RoomForSportDribbble() {
             {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
+        </div>
 
       </motion.header>
 
@@ -1642,7 +1650,7 @@ export default function RoomForSportDribbble() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.25, ease: 'easeInOut' }}
-            className="xl:hidden fixed inset-x-0 top-[72px] z-40 bg-white/95 dark:bg-[#0F1012]/95 backdrop-blur-xl border-b border-gray-200 dark:border-white/10 p-6 shadow-2xl space-y-4"
+            className={`xl:hidden fixed inset-x-0 ${isScrolled ? 'top-[64px]' : 'top-[76px]'} z-40 bg-white/95 dark:bg-[#0F1012]/95 backdrop-blur-xl border-b border-gray-200 dark:border-white/10 p-6 shadow-2xl space-y-4 max-h-[calc(100vh-80px)] overflow-y-auto transition-all duration-300`}
           >
             <nav className="flex flex-col space-y-3 text-sm font-bold uppercase tracking-wider text-gray-800 dark:text-gray-200">
               <a 
@@ -1788,7 +1796,7 @@ export default function RoomForSportDribbble() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative">
           
           {/* Left Text Column */}
-          <div className="lg:col-span-6 z-10 space-y-6 text-left">
+          <div className="lg:col-span-7 z-10 space-y-6 text-left">
             
             <motion.div 
               initial={{ opacity: 0, y: 15 }}
@@ -1829,14 +1837,14 @@ export default function RoomForSportDribbble() {
               {t.hero.sub}
             </motion.p>
 
-            {/* REDESIGNED BUTTONS: ELIMINATING COGNITIVE OVERLOAD (HICK'S LAW) */}
+            {/* Botones de llamada a la acción */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="flex flex-wrap items-center gap-3.5 pt-2"
             >
-              {/* Primary Tactile Button: Explore Memberships -> Scrolls to #plans-section */}
+              {/* Botón principal: Membresías */}
               <a 
                 href="#plans-section"
                 className="btn-tactile-orange group cursor-pointer inline-flex items-center"
@@ -1848,7 +1856,7 @@ export default function RoomForSportDribbble() {
                 </span>
               </a>
 
-              {/* Secondary Tactile Button: Start Your Journey -> Scrolls to #services-section */}
+              {/* Botón secundario: Disciplinas */}
               <a 
                 href="#services-section"
                 className="btn-tactile-dark group cursor-pointer inline-flex items-center"
@@ -1862,57 +1870,13 @@ export default function RoomForSportDribbble() {
             </motion.div>
           </div>
 
-          {/* Center Dynamic Athlete Video Showcase */}
-          <div className="lg:col-span-3 flex justify-center z-10">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.92, rotate: -3 }}
-              animate={{ opacity: 1, scale: 1, rotate: 0 }}
-              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-72 sm:w-80 h-96 sm:h-[460px] group cursor-pointer"
-              onClick={() => setActiveModal('brandFilm')}
-            >
-              {/* Local Ultra-Fast Video Stream */}
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover rounded-3xl shadow-2xl filter contrast-105 group-hover:scale-[1.02] transition-transform duration-700"
-                src="/videos/basketball-loop.webm"
-              />
-
-              {/* Top Live Pill Badge */}
-              <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 flex items-center gap-1.5 text-[10px] font-mono font-bold text-white shadow-lg">
-                <span className="w-2 h-2 rounded-full bg-[#CDFF00] animate-ping" />
-                <span>{lang === 'es' ? 'BRAND FILM · EN VIVO' : 'BRAND FILM · LIVE'}</span>
-              </div>
-
-              {/* Play Button Overlay on Hover */}
-              <div className="absolute inset-0 bg-black/15 group-hover:bg-black/35 rounded-3xl transition-colors flex items-center justify-center">
-                <div className="w-16 h-16 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:bg-[#CDFF00] transition-all duration-300">
-                  <Play className="w-7 h-7 text-black fill-black ml-1" />
-                </div>
-              </div>
-
-              {/* Bottom Floating Card with Continuous Hover Physics */}
-              <div className="absolute -bottom-4 -left-4 bg-white/95 dark:bg-[#14161B]/95 backdrop-blur-md p-3.5 rounded-2xl border border-black/[0.06] dark:border-white/10 shadow-xl text-left animate-float-card">
-                <div className="flex items-center gap-2 text-xs font-black text-gray-900 dark:text-white">
-                  <Flame className="w-4 h-4 text-[#FF4900]" /> {lang === 'es' ? 'De la Pantalla a la Cancha' : 'From Screen to Court'}
-                </div>
-                <div className="text-[10px] text-gray-500 dark:text-gray-400 font-medium">
-                  {lang === 'es' ? 'Click para ver a pantalla completa' : 'Click to watch fullscreen'}
-                </div>
-              </div>
-            </motion.div>
-          </div>
-
           {/* Right Floating Orange Coaching Card with Float Motion */}
-          <div className="lg:col-span-3 z-20 flex justify-end">
+          <div className="lg:col-span-5 z-20 flex justify-center lg:justify-end">
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full max-w-xs rounded-3xl bg-[#FF4900] text-white p-5 shadow-2xl flex flex-col justify-between text-left space-y-4 animate-float-card border border-white/20"
+              className="w-full max-w-sm rounded-3xl bg-[#FF4900] text-white p-6 shadow-2xl flex flex-col justify-between text-left space-y-4 animate-float-card border border-white/20"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
@@ -1933,7 +1897,7 @@ export default function RoomForSportDribbble() {
                 <img
                   src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=600&q=80"
                   alt="Head Coach Room for Sport"
-                  className="w-full h-44 object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-52 object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
@@ -1960,7 +1924,7 @@ export default function RoomForSportDribbble() {
 
       </section>
 
-      {/* SECTION 2: GIANT "SPORT RUSH" & DARK BENTO SECTION */}
+      {/* SECCIÓN 2: SPORT RUSH Y DESTACADOS */}
       <motion.section 
         initial="hidden"
         whileInView="visible"
@@ -1970,7 +1934,7 @@ export default function RoomForSportDribbble() {
       >
         <div className="max-w-7xl mx-auto space-y-12">
           
-          {/* Giant Cutout Typography with Kinetic Texture Pan Animation */}
+          {/* Título de sección Sport Rush */}
           <motion.div variants={fadeInUp} className="text-left">
             <h2 
               className="text-7xl sm:text-9xl lg:text-[170px] font-black uppercase tracking-[-0.05em] leading-[0.82] select-none animate-pan-sport-rush"
@@ -1986,10 +1950,10 @@ export default function RoomForSportDribbble() {
             </h2>
           </motion.div>
 
-          {/* Bento Sub-Cards with Images & Clickable Interactive Triggers */}
+          {/* Tarjetas informativas con accesos a modales */}
           <motion.div variants={staggerContainer} className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
             
-            {/* Bento Card 1: Ergonomía & Dolor de Espalda */}
+            {/* Tarjeta 1: Salud y movilidad activa */}
             <motion.div 
               variants={slideInLeft}
               whileHover={{ y: -5 }}
@@ -2027,7 +1991,7 @@ export default function RoomForSportDribbble() {
               </div>
             </motion.div>
 
-            {/* Bento Card 2: Alto Rendimiento y Fuerza */}
+            {/* Tarjeta 2: Equipamiento y salas modulares */}
             <motion.div 
               variants={slideInRight}
               whileHover={{ y: -5 }}
@@ -2159,7 +2123,7 @@ export default function RoomForSportDribbble() {
                       {studios[selectedStudio].description}
                     </p>
 
-                    {/* Technical Specifications */}
+                    {/* Especificaciones de la sala */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                       <div className="p-3.5 bg-gray-50 dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10">
                         <div className="text-[10px] font-mono uppercase text-gray-500 dark:text-gray-400 font-bold">
@@ -2190,7 +2154,7 @@ export default function RoomForSportDribbble() {
                       </div>
                     </div>
 
-                    {/* Hick's Law: 1 Clear Decisive Call-to-Action */}
+                    {/* Botón de solicitud de render */}
                     <div className="pt-4 flex flex-wrap items-center gap-3">
                       <button
                         onClick={() => setActiveModal('booking')}
@@ -2238,7 +2202,7 @@ export default function RoomForSportDribbble() {
           {/* Left Column: Tech Features */}
           <motion.div variants={slideInLeft} className="lg:col-span-6 space-y-6">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#CDFF00]/10 text-[#CDFF00] text-xs font-black uppercase tracking-widest border border-[#CDFF00]/20">
-              <Smartphone className="w-3.5 h-3.5" /> {lang === 'es' ? 'Software & Telemetría Corporativa' : 'Software & Corporate Telemetry'}
+              <Smartphone className="w-3.5 h-3.5" /> {lang === 'es' ? 'Aplicación Móvil & Gestión' : 'Mobile App & Management'}
             </div>
 
             <h2 className="text-4xl sm:text-6xl font-black uppercase tracking-tight leading-tight">
@@ -2379,14 +2343,14 @@ export default function RoomForSportDribbble() {
 
         </div>
 
-        {/* Core Enterprise Architecture Pillars (Official Document Specification) */}
+        {/* Características del sistema */}
         <div className="max-w-7xl mx-auto mt-16 pt-12 border-t border-white/10">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-[10px] font-mono uppercase tracking-widest text-[#CDFF00] font-bold">
-              {lang === 'es' ? 'Infraestructura & Especificaciones Técnicas' : 'Platform & Technical Specifications'}
+              {lang === 'es' ? 'Características del Sistema' : 'System Features'}
             </span>
             <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white mt-1">
-              {lang === 'es' ? 'Arquitectura Robusta para Alta Demanda' : 'Robust Architecture for High Throughput'}
+              {lang === 'es' ? 'Plataforma Completa para Deportes' : 'All-in-One Sports Platform'}
             </h3>
           </div>
 
@@ -2394,31 +2358,31 @@ export default function RoomForSportDribbble() {
             {[
               {
                 icon: Layers,
-                title: lang === 'es' ? 'Venue Mapping Multi-Disciplina' : 'Multi-Disciplinary Venue Mapping',
+                title: lang === 'es' ? 'Gestión de Recintos y Canchas' : 'Multi-Sport Venue Management',
                 desc: lang === 'es'
-                  ? 'Mapeo topológico en tiempo real de canchas de baloncesto, césped FIFA, canales de nado y dojos con inventario dinámico de material deportivo.'
-                  : 'Real-time topological mapping of basketball hardcourts, FIFA turf, lap swimming flumes, and dojos with dynamic equipment rental pairing.'
+                  ? 'Visualización y reserva en tiempo real de canchas de baloncesto, campos de fútbol, piscinas y salas modulares.'
+                  : 'Real-time booking and schedule availability for basketball courts, soccer pitches, pools, and training rooms.'
               },
               {
                 icon: Target,
-                title: lang === 'es' ? 'Motor de Matchmaking & Ghost Slots' : 'Matchmaking & Ghost Slots Engine',
+                title: lang === 'es' ? 'Organización de Partidos y Equipos' : 'Matchmaking & Team Events',
                 desc: lang === 'es'
-                  ? 'Emparejamiento por percentil ELO de habilidad y monetización algorítmica de huecos libres para asegurar el 100% de ocupación en recintos.'
-                  : 'Skill-based matchmaking algorithms and algorithmic open-slot ghost spot monetization ensuring peak facility capacity utilization.'
+                  ? 'Emparejamiento de jugadores por nivel y horarios compartidos para que nunca falte un compañero en la cancha.'
+                  : 'Player matchmaking by skill level and shared calendar schedules so courts and teams stay active.'
               },
               {
                 icon: Zap,
-                title: lang === 'es' ? 'IoT Hardware & Relés de Energía' : 'IoT Hardware & Energy Relays',
+                title: lang === 'es' ? 'Acceso Rápido y Control Inteligente' : 'Smart Check-in & Lighting',
                 desc: lang === 'es'
-                  ? 'Torniquetes ópticos con lectura QR <0.2s, pulseras RFID y relés automáticos de iluminación LED y climatización HVAC (-42% gasto fantasma).'
-                  : 'Optical turnstiles (<0.2s QR read), RFID wearables, and automated court LED/HVAC relays saving 42% in idle utility overhead.'
+                  ? 'Entrada cómoda mediante código QR y programación eficiente de iluminación en salas deportivas para ahorrar energía.'
+                  : 'Quick QR code check-in and automated energy-efficient lighting for sport rooms.'
               },
               {
                 icon: ShieldCheck,
-                title: lang === 'es' ? 'Nube 99.99%, PCI-DSS & RGPD' : '99.99% Cloud, PCI-DSS & GDPR',
+                title: lang === 'es' ? 'Seguridad y Privacidad de Datos' : 'Security & Data Privacy',
                 desc: lang === 'es'
-                  ? 'Microservicios con SLA del 99.99%, pasarelas de pago con tokenización PCI-DSS Nivel 1 y encriptación de datos biométricos conforme a RGPD.'
-                  : 'Cloud microservices with 99.99% uptime SLA, PCI-DSS Level 1 tokenized payment gateways, and GDPR-compliant biometrics encryption.'
+                  ? 'Protección segura de datos personales, historial de entrenamientos y pasarelas de pago seguras.'
+                  : 'Secure storage of athlete profiles, workout history, and verified payment gateways.'
               }
             ].map((pillar, pIdx) => {
               const PIcon = pillar.icon;
@@ -2495,7 +2459,7 @@ export default function RoomForSportDribbble() {
           {/* Right Floating White Event Container */}
           <motion.div variants={slideInRight} className="lg:w-1/2 w-full max-w-xl bg-white dark:bg-[#14161B] rounded-3xl p-6 sm:p-8 shadow-2xl relative text-left border border-transparent dark:border-white/10">
             
-            {/* Neon Lime Circular Action Badge with Kinetic Spring Rotation */}
+            {/* Botón flotante de eventos */}
             <motion.div 
               whileHover={{ scale: 1.1, rotate: 15 }}
               whileTap={{ scale: 0.94 }}
@@ -2661,7 +2625,7 @@ export default function RoomForSportDribbble() {
         </motion.div>
       </motion.section>
 
-      {/* SECTION 2: MEMBERSHIPS & PRICING (OFFICIAL SPECIFICATION) */}
+      {/* Sección 2: Membresías y Precios */}
       <motion.section 
         initial="hidden"
         whileInView="visible"
@@ -2761,7 +2725,7 @@ export default function RoomForSportDribbble() {
                   </span>
                 </div>
 
-                {/* SLA Guarantee Badge */}
+                {/* Insignia de soporte del plan */}
                 <div className={`text-[10px] font-mono p-2 rounded-xl mb-4 flex items-start gap-1.5 border ${
                   p.popular 
                     ? 'bg-white/10 border-white/15 text-gray-300' 
@@ -2814,7 +2778,7 @@ export default function RoomForSportDribbble() {
         </motion.div>
       </motion.section>
 
-      {/* SECTION 2.5: OPERATIONAL SCENARIOS & INTERACTIVE USE CASES (OFFICIAL SPECIFICATION) */}
+      {/* Sección: Casos de Uso */}
       <motion.section 
         initial="hidden"
         whileInView="visible"
@@ -2826,18 +2790,18 @@ export default function RoomForSportDribbble() {
         <motion.div variants={fadeInUp} className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#CDFF00]/20 text-black dark:text-[#CDFF00] text-xs font-black uppercase tracking-widest border border-[#CDFF00]/40 mb-3">
             <Activity className="w-3.5 h-3.5 text-[#FF4900]" />
-            {lang === 'es' ? 'Casos de Uso Operativos' : 'Operational Scenarios'}
+            {lang === 'es' ? 'Casos de Uso' : 'Use Cases'}
           </div>
           <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-gray-900 dark:text-white leading-tight">
             {lang === 'es' ? 'Tres Vías Reales de Impacto' : 'Three Tangible Pathways of Impact'}
           </h2>
           <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-3 leading-relaxed">
             {lang === 'es' 
-              ? 'Experimenta interactivamente cómo Room for Sport optimiza la experiencia de un jugador de fin de semana, una capitana de club amateur y el director de un gran complejo deportivo.' 
-              : 'Test how Room for Sport resolves real-world friction for a casual weekend warrior, an amateur club captain, and an arena operations director.'}
+              ? 'Descubre cómo Room for Sport ayuda tanto a jugadores como a capitanes y administradores de complejos deportivos.' 
+              : 'Discover how Room for Sport helps players, team captains, and sports facility managers.'}
           </p>
 
-          {/* Hick's Law: 3 Clear Persona Tabs */}
+          {/* Pestañas de perfiles de usuario */}
           <div className="flex flex-wrap items-center justify-center gap-3 mt-8" role="tablist">
             {[
               { id: 'marcus', label: lang === 'es' ? '1. Marcus (Jugador Casual)' : '1. Marcus (Casual Athlete)', icon: Users, sub: 'Búsqueda 5km & Torniquete QR' },
@@ -3026,7 +2990,7 @@ export default function RoomForSportDribbble() {
               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
                 {lang === 'es'
                   ? 'Elena diseña las rotaciones tácticas 4-3-3 de su equipo, monitoriza el parte de lesiones (2 jugadoras de baja) y divide automáticamente la factura de €120 del campo entre las 15 jugadoras convocadas (€8.00 por jugadora) sin tener que perseguir transferencias manuales ni pagar de su propio bolsillo.'
-                  : 'Elena designs 4-3-3 tactical match sheets, monitors squad injury telemetry (2 out with strain), and automates €120 pitch fee splitting across 15 active players (€8.00 each) directly via integrated wallets.'}
+                  : 'Elena designs 4-3-3 tactical match sheets, monitors squad injury updates (2 out with strain), and automates €120 pitch fee splitting across 15 active players (€8.00 each) directly via integrated wallets.'}
               </p>
 
               {/* Roster & Financial Split Simulator */}
@@ -3140,21 +3104,21 @@ export default function RoomForSportDribbble() {
             <div className="lg:col-span-6 space-y-5">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 text-xs font-extrabold uppercase tracking-wider">
                 <BarChart3 className="w-3.5 h-3.5" />
-                {lang === 'es' ? 'Optimización B2B de Recintos & IoT' : 'B2B Venue Operations & IoT'}
+                {lang === 'es' ? 'Gestión de Recintos Deportivos' : 'Sports Venue Management'}
               </div>
               <h3 className="text-2xl sm:text-3xl font-black text-gray-900 dark:text-white uppercase tracking-tight">
                 Carlos • {lang === 'es' ? 'Director de Operaciones en Apex Multisport Arena' : 'Operations Director at Apex Multisport Arena'}
               </h3>
               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
                 {lang === 'es'
-                  ? 'Carlos gestiona un complejo de 12 canchas con una tasa de ocupación baja (22%) en mañanas laborables. Al activar el motor de precios dinámicos de Room for Sport con un 35% de descuento off-peak, la ocupación se disparó al 74% en 48 horas, generando +€4,380 al mes en ingresos netos recuperados y automatizando el encendido de focos LED e impulsión HVAC.'
-                  : 'Carlos operates a 12-court arena plagued by 22% off-peak morning occupancy. Enabling Room for Sport dynamic pricing with a 35% discount surged utilization to 74% in 48 hours, unlocking +€4,380/mo in net revenue and automating LED/HVAC relays.'}
+                  ? 'Carlos administra un complejo de 12 canchas con baja ocupación en mañanas laborales. Al activar promociones especiales con Room for Sport, subió la ocupación matutina del 22% al 74%, aumentando los ingresos mensuales y automatizando el control de luces en las canchas.'
+                  : 'Carlos manages a 12-court sports facility with low morning occupancy. By setting up off-peak promotions with Room for Sport, morning occupancy jumped from 22% to 74%, increasing monthly revenue and automating court lighting schedules.'}
               </p>
 
               {/* Dynamic Discount Simulator */}
               <div className="p-4 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 space-y-3">
                 <div className="flex justify-between items-center text-xs font-bold">
-                  <label htmlFor="dynamic-discount-range">{lang === 'es' ? 'Descuento Dinámico Franjas Valle (Off-Peak):' : 'Off-Peak Dynamic Discount:'}</label>
+                  <label htmlFor="dynamic-discount-range">{lang === 'es' ? 'Descuento en Horarios Valle:' : 'Off-Peak Discount:'}</label>
                   <span className="font-mono text-base text-[#FF4900]">-{carlosDiscount}%</span>
                 </div>
                 <input
@@ -3170,11 +3134,11 @@ export default function RoomForSportDribbble() {
 
                 <div className="grid grid-cols-2 gap-3 pt-2">
                   <div className="p-3 rounded-xl bg-white dark:bg-[#1A1C20] border border-gray-200 dark:border-white/10 text-left">
-                    <span className="text-[10px] text-gray-400 block">{lang === 'es' ? 'Ocupación Valle Inicial' : 'Baseline Occupancy'}</span>
+                    <span className="text-[10px] text-gray-400 block">{lang === 'es' ? 'Ocupación Inicial' : 'Baseline Occupancy'}</span>
                     <span className="text-xl font-mono font-bold text-gray-400">22%</span>
                   </div>
                   <div className="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-800 text-left">
-                    <span className="text-[10px] text-emerald-600 dark:text-emerald-400 block font-bold">{lang === 'es' ? 'Ocupación Tras 48h' : 'Surge Occupancy'}</span>
+                    <span className="text-[10px] text-emerald-600 dark:text-emerald-400 block font-bold">{lang === 'es' ? 'Ocupación Estimada' : 'Projected Occupancy'}</span>
                     <span className="text-xl font-mono font-black text-emerald-600 dark:text-emerald-300">
                       {Math.min(95, Math.round(22 + (carlosDiscount * 1.48)))}%
                     </span>
@@ -3187,16 +3151,16 @@ export default function RoomForSportDribbble() {
                 <div className="flex justify-between items-center">
                   <span className="text-gray-300 font-bold flex items-center gap-2">
                     <Zap className="w-4 h-4 text-[#CDFF00]" />
-                    {lang === 'es' ? 'Relé Automatizado Iluminación LED & Clima' : 'Automated IoT Lighting & HVAC Relay'}
+                    {lang === 'es' ? 'Control Automatizado de Luces' : 'Automated Lighting Control'}
                   </span>
                   <span className="text-[10px] font-mono text-[#CDFF00] font-bold">
-                    {lang === 'es' ? 'STANDBY ACTIVO' : 'ACTIVE STANDBY'}
+                    {lang === 'es' ? 'ACTIVO' : 'ACTIVE'}
                   </span>
                 </div>
                 <p className="text-[11px] text-gray-400">
                   {lang === 'es'
-                    ? 'Los focos LED de las pistas 1 a 12 se encienden automáticamente 5 min antes de cada reserva y se apagan al minuto 58, eliminando el consumo fantasma.'
-                    : 'LED floodlights and HVAC switch on 5 min before sessions and power down at minute 58, eliminating phantom utility waste.'}
+                    ? 'Las luces de las canchas se encienden automáticamente 5 minutos antes de cada reserva y se apagan al terminar, evitando el gasto innecesario de energía.'
+                    : 'Court lights turn on automatically 5 minutes before each booking and switch off when finished, avoiding unnecessary electric costs.'}
                 </p>
               </div>
             </div>
@@ -3212,7 +3176,7 @@ export default function RoomForSportDribbble() {
                     </div>
                   </div>
                   <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-mono font-bold">
-                    99.99% SLA
+                    99.9% Uptime
                   </span>
                 </div>
 
@@ -3222,22 +3186,22 @@ export default function RoomForSportDribbble() {
                     +€{Math.round(4380 * (carlosDiscount / 35)).toLocaleString()} / mes
                   </div>
                   <div className="text-[10px] text-emerald-400">
-                    {lang === 'es' ? 'De franjas muertas a beneficio neto directo' : 'Direct yield from previously idle slots'}
+                    {lang === 'es' ? 'Aprovechando horarios con menor concurrencia' : 'Direct yield from previously idle slots'}
                   </div>
                 </div>
 
                 <div className="space-y-3 text-xs">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-400">{lang === 'es' ? 'Software Marca Blanca:' : 'White-Label Portal:'}</span>
-                    <span className="text-white font-bold">{lang === 'es' ? 'Desplegado' : 'Deployed'}</span>
+                    <span className="text-gray-400">{lang === 'es' ? 'Portal para el Club:' : 'Club Portal:'}</span>
+                    <span className="text-white font-bold">{lang === 'es' ? 'Activo' : 'Active'}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-400">{lang === 'es' ? 'Torniquetes RFID & QR:' : 'Turnstiles & QR Hardware:'}</span>
-                    <span className="text-white font-bold">{lang === 'es' ? '12 Pasos Enlazados' : '12 Linked Gates'}</span>
+                    <span className="text-gray-400">{lang === 'es' ? 'Control de Acceso QR:' : 'QR Gate Access:'}</span>
+                    <span className="text-white font-bold">{lang === 'es' ? '12 Pistas Conectadas' : '12 Linked Gates'}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-400">{lang === 'es' ? 'Conciliación Fiscal Automática:' : 'Automated Tax Reconciliation:'}</span>
-                    <span className="text-white font-bold font-mono">PCI-DSS L1</span>
+                    <span className="text-gray-400">{lang === 'es' ? 'Seguridad en Pagos:' : 'Payment Security:'}</span>
+                    <span className="text-white font-bold font-mono">Stripe SSL</span>
                   </div>
                 </div>
 
@@ -3257,7 +3221,7 @@ export default function RoomForSportDribbble() {
         )}
       </motion.section>
 
-      {/* SECTION 3: SERVICES & ACTIVITIES (OFFICIAL SPECIFICATION) */}
+      {/* Sección 3: Servicios y Actividades */}
       <motion.section 
         initial="hidden"
         whileInView="visible"
@@ -3278,7 +3242,7 @@ export default function RoomForSportDribbble() {
           </p>
         </motion.div>
 
-        {/* Hick's Law: 4 Clear Filter Pills */}
+        {/* Filtros por tipo de deporte */}
         <motion.div variants={fadeInUp} className="flex flex-wrap items-center justify-center gap-2 mb-10" role="tablist" aria-label="Filtro de disciplinas deportivas">
           {[
             { id: 'all', label: t.services.filters.all, count: 7 },
@@ -3400,7 +3364,7 @@ export default function RoomForSportDribbble() {
         </motion.div>
       </motion.section>
 
-      {/* SECTION 4: USER DASHBOARD / PROGRESS TRACKING (OFFICIAL SPECIFICATION) */}
+      {/* Sección 4: Dashboard y Progreso */}
       <motion.section 
         initial="hidden"
         whileInView="visible"
@@ -3421,10 +3385,10 @@ export default function RoomForSportDribbble() {
           </p>
         </motion.div>
 
-        {/* 3 Interactive Widgets Suite */}
+        {/* Widgets del dashboard */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
-          {/* WIDGET 1: My Training Diary -> Log Today's Workout (Interactive Form & Live Entries Feed) */}
+          {/* Widget 1: Registro de entrenamientos */}
           <motion.div 
             variants={fadeInUp}
             className="lg:col-span-5 rounded-[2.5rem] bg-white dark:bg-[#14161B] border border-gray-200 dark:border-white/10 p-6 sm:p-8 shadow-xl space-y-6"
@@ -3760,7 +3724,7 @@ export default function RoomForSportDribbble() {
         </div>
       </motion.section>
 
-      {/* SECTION 5: SPORTS TIPS & RESOURCES (OFFICIAL SPECIFICATION) */}
+      {/* Sección 5: Consejos y Artículos */}
       <motion.section 
         initial="hidden"
         whileInView="visible"
@@ -3781,7 +3745,7 @@ export default function RoomForSportDribbble() {
           </p>
         </motion.div>
 
-        {/* Hick's Law: 4 Category Tabs */}
+        {/* Pestañas de categorías */}
         <motion.div variants={fadeInUp} className="flex flex-wrap items-center justify-center gap-2 mb-10" role="tablist" aria-label="Filtro de artículos de expertos">
           {[
             { id: 'all', label: t.tips.filters.all, count: 7 },
@@ -3871,6 +3835,269 @@ export default function RoomForSportDribbble() {
               ))}
           </AnimatePresence>
         </motion.div>
+      </motion.section>
+
+      {/* Sección: Validación y Estudio de Usuarios */}
+      <motion.section 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-80px" }}
+        variants={staggerContainer}
+        id="user-research-section" 
+        className="w-full max-w-7xl mx-auto px-6 py-24 text-left"
+      >
+        <motion.div variants={fadeInUp} className="text-center max-w-3xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#CDFF00]/15 dark:bg-[#CDFF00]/10 border border-[#CDFF00]/40 text-black dark:text-[#CDFF00] text-xs font-black uppercase tracking-widest mb-3">
+            <UserCheck className="w-3.5 h-3.5 text-[#FF4900]" />
+            {lang === 'es' ? 'Validación con Usuarios • N=22' : 'User Survey & Research • N=22'}
+          </div>
+          <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-gray-900 dark:text-white leading-tight">
+            {lang === 'es' 
+              ? 'Respaldado por Respuestas de Usuarios Reales' 
+              : 'Backed by Real User Research'}
+          </h2>
+          <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-3 leading-relaxed">
+            {lang === 'es' 
+              ? 'Estudio realizado con 22 estudiantes y deportistas. Cada función y espacio de Room for Sport responde a opiniones y necesidades expresadas en la encuesta.' 
+              : 'Survey conducted with 22 students and sports participants. Every feature and space in Room for Sport is designed around real feedback.'}
+          </p>
+        </motion.div>
+
+        {/* Métricas clave del estudio */}
+        <motion.div variants={staggerContainer} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          
+          {/* KPI 1: Adoption Intent */}
+          <motion.div 
+            variants={fadeInUp} 
+            whileHover={{ y: -4 }}
+            className="p-6 rounded-3xl bg-white dark:bg-[#14161B] border border-gray-200 dark:border-white/10 shadow-md hover:shadow-xl transition-all relative overflow-hidden group"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#FF4900] bg-[#FF4900]/10 px-2.5 py-1 rounded-full">
+                {lang === 'es' ? 'Demanda Directa' : 'Adoption Intent'}
+              </span>
+              <CheckCircle2 className="w-5 h-5 text-[#FF4900]" />
+            </div>
+            <div className="text-4xl sm:text-5xl font-black text-gray-900 dark:text-white font-mono tracking-tight">
+              81.9%
+            </div>
+            <div className="text-xs font-bold text-gray-800 dark:text-gray-200 mt-2 uppercase tracking-wide">
+              {lang === 'es' ? 'Interés en Membresía' : 'Membership Demand'}
+            </div>
+            <p className="text-[11px] text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
+              {lang === 'es' 
+                ? '18 de 22 encuestados respondieron "Definitely yes" o "Probably yes" a recibir acceso institucional a Room for Sport.' 
+                : '18 of 22 respondents confirmed "Definitely yes" or "Probably yes" to joining through company memberships.'}
+            </p>
+          </motion.div>
+
+          {/* KPI 2: Positive Sentiment */}
+          <motion.div 
+            variants={fadeInUp} 
+            whileHover={{ y: -4 }}
+            className="p-6 rounded-3xl bg-white dark:bg-[#14161B] border border-gray-200 dark:border-white/10 shadow-md hover:shadow-xl transition-all relative overflow-hidden group"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">
+                {lang === 'es' ? 'Aceptación' : 'Positive Sentiment'}
+              </span>
+              <Sparkles className="w-5 h-5 text-emerald-500" />
+            </div>
+            <div className="text-4xl sm:text-5xl font-black text-gray-900 dark:text-white font-mono tracking-tight">
+              100%
+            </div>
+            <div className="text-xs font-bold text-gray-800 dark:text-gray-200 mt-2 uppercase tracking-wide">
+              {lang === 'es' ? 'Cero Rechazo' : 'Zero Churn Risk'}
+            </div>
+            <p className="text-[11px] text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
+              {lang === 'es' 
+                ? 'Cero respuestas negativas ("No"). El 100% validó positivamente la creación de recintos dedicados al deporte.' 
+                : 'Zero negative responses ("No"). 100% of participants validated designated in-office athletic rooms as a high-value concept.'}
+            </p>
+          </motion.div>
+
+          {/* KPI 3: Progress Tracking Priority */}
+          <motion.div 
+            variants={fadeInUp} 
+            whileHover={{ y: -4 }}
+            className="p-6 rounded-3xl bg-white dark:bg-[#14161B] border border-gray-200 dark:border-white/10 shadow-md hover:shadow-xl transition-all relative overflow-hidden group"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#0066FF] dark:text-[#CDFF00] bg-blue-500/10 dark:bg-[#CDFF00]/10 px-2.5 py-1 rounded-full">
+                {lang === 'es' ? 'Función #1' : '#1 Requested'}
+              </span>
+              <BarChart3 className="w-5 h-5 text-[#0066FF] dark:text-[#CDFF00]" />
+            </div>
+            <div className="text-4xl sm:text-5xl font-black text-gray-900 dark:text-white font-mono tracking-tight">
+              40.9%
+            </div>
+            <div className="text-xs font-bold text-gray-800 dark:text-gray-200 mt-2 uppercase tracking-wide">
+              {lang === 'es' ? 'Seguimiento de Progreso' : 'Progress Tracking'}
+            </div>
+            <p className="text-[11px] text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
+              {lang === 'es' 
+                ? 'El diario de entrenamiento y registro de progreso superó en prioridad a la variedad de contenido (31.8%) y personalización (18.2%).' 
+                : 'Activity logs and progress tracking ranked above content variety (31.8%) and personalization (18.2%).'}
+            </p>
+          </motion.div>
+
+          {/* KPI 4: Sports Distribution */}
+          <motion.div 
+            variants={fadeInUp} 
+            whileHover={{ y: -4 }}
+            className="p-6 rounded-3xl bg-white dark:bg-[#14161B] border border-gray-200 dark:border-white/10 shadow-md hover:shadow-xl transition-all relative overflow-hidden group"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded-full">
+                {lang === 'es' ? 'Comportamiento' : 'Disciplines'}
+              </span>
+              <Target className="w-5 h-5 text-purple-500" />
+            </div>
+            <div className="text-4xl sm:text-5xl font-black text-gray-900 dark:text-white font-mono tracking-tight">
+              68 / 32
+            </div>
+            <div className="text-xs font-bold text-gray-800 dark:text-gray-200 mt-2 uppercase tracking-wide">
+              {lang === 'es' ? 'Equipos vs. Solo' : 'Team vs. Solo Ratio'}
+            </div>
+            <p className="text-[11px] text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
+              {lang === 'es' 
+                ? '68.2% prefiere deportes colectivos y 31.8% individuales, justificando el filtrado dual en nuestra biblioteca de actividades.' 
+                : '68.2% prefer team dynamics and 31.8% solo training, justifying our dual-track sports filter.'}
+            </p>
+          </motion.div>
+
+        </motion.div>
+
+        {/* 2. Visual Split & Sports Demand Pills */}
+        <motion.div variants={fadeInUp} className="p-8 rounded-[2.5rem] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#14161B] dark:to-[#0F1012] border border-gray-200 dark:border-white/10 shadow-lg mb-12">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-6">
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-widest text-[#FF4900] font-bold">
+                {lang === 'es' ? 'Distribución Visual de Hábitos Deportivos' : 'Visual Sports Habits Distribution'}
+              </span>
+              <h3 className="text-xl sm:text-2xl font-black uppercase text-gray-900 dark:text-white mt-1">
+                {lang === 'es' ? 'Preferencia de Modalidad Deportiva' : 'Athletic Modality Preference'}
+              </h3>
+            </div>
+            <div className="flex items-center gap-4 text-xs font-mono font-bold">
+              <span className="flex items-center gap-1.5 text-[#FF4900]">
+                <span className="w-3 h-3 rounded-full bg-[#FF4900]" /> {lang === 'es' ? 'Deportes de Equipo (68.2%)' : 'Team Sports (68.2%)'}
+              </span>
+              <span className="flex items-center gap-1.5 text-black dark:text-[#CDFF00]">
+                <span className="w-3 h-3 rounded-full bg-[#CDFF00]" /> {lang === 'es' ? 'Individual (31.8%)' : 'Individual (31.8%)'}
+              </span>
+            </div>
+          </div>
+
+          {/* Dual Segment Progress Bar */}
+          <div className="w-full h-5 rounded-full bg-gray-200 dark:bg-white/10 p-1 flex overflow-hidden shadow-inner mb-6">
+            <div 
+              style={{ width: '68.2%' }} 
+              className="h-full bg-gradient-to-r from-[#FF4900] to-[#FF6B00] rounded-l-full relative group transition-all duration-500"
+            />
+            <div 
+              style={{ width: '31.8%' }} 
+              className="h-full bg-gradient-to-r from-[#CDFF00] to-[#AEE600] rounded-r-full relative group transition-all duration-500"
+            />
+          </div>
+
+          {/* Validated Sports Pills */}
+          <div className="space-y-2">
+            <span className="text-[11px] font-mono text-gray-500 dark:text-gray-400 uppercase font-bold">
+              {lang === 'es' ? 'Disciplinas Reales Registradas en el Estudio:' : 'Verified Disciplines Mentioned in Study:'}
+            </span>
+            <div className="flex flex-wrap gap-2 pt-1">
+              {[
+                { name: lang === 'es' ? 'Fútbol & Soccer' : 'Soccer & Football' },
+                { name: lang === 'es' ? 'Baloncesto' : 'Basketball' },
+                { name: lang === 'es' ? 'Voleibol' : 'Volleyball' },
+                { name: lang === 'es' ? 'Natación' : 'Swimming' },
+                { name: lang === 'es' ? 'Patinaje' : 'Skating' },
+                { name: lang === 'es' ? 'Deportes de Contacto' : 'Combat Sports' },
+                { name: lang === 'es' ? 'Ajedrez Mental' : 'Mind Chess' },
+                { name: lang === 'es' ? 'Ping Pong' : 'Table Tennis' },
+                { name: lang === 'es' ? 'Motocross' : 'Motocross' }
+              ].map((sport, sIdx) => (
+                <span 
+                  key={sIdx}
+                  className="px-3.5 py-1.5 rounded-full bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 text-xs font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2 shadow-sm"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FF4900]" />
+                  <span>{sport.name}</span>
+                </span>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+
+        {/* 3. Authentic Voice of Customer (Quotes Grid) */}
+        <div>
+          <div className="mb-6 text-left">
+            <span className="text-[10px] font-mono uppercase tracking-widest text-[#CDFF00] font-bold">
+              {lang === 'es' ? 'Voces Reales de los Usuarios' : 'Authentic Voice of Customer'}
+            </span>
+            <h3 className="text-xl sm:text-2xl font-black uppercase text-gray-900 dark:text-white mt-1">
+              {lang === 'es' ? 'Citas Textuales Extraídas de la Encuesta' : 'Direct Feedback Quotes from Survey'}
+            </h3>
+          </div>
+
+          <motion.div variants={staggerContainer} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                quote: 'In this Highschool would be amazing.',
+                author: 'Caleb Villalta Prado',
+                role: lang === 'es' ? 'Fútbol • Estudiante CTP' : 'Football • CTP Student',
+                highlight: lang === 'es' ? 'Impacto Educativo' : 'Campus Viability'
+              },
+              {
+                quote: 'I think it is very necessary for people who have not yet had any contact with the sport or are beginners.',
+                author: 'Susan Rodríguez Cruz',
+                role: lang === 'es' ? 'Deportes de Contacto' : 'Combat Sports Athlete',
+                highlight: lang === 'es' ? 'Inclusión Principiante' : 'Beginner Friendly'
+              },
+              {
+                quote: 'I think its a pretty good idea but also the places and the costs are things to take in count.',
+                author: 'Isaac',
+                role: lang === 'es' ? 'Fútbol 4 días/semana' : 'Soccer (4 days/week)',
+                highlight: lang === 'es' ? 'Costos & Espacio' : 'Pricing & Location'
+              },
+              {
+                quote: 'I think that it can be an a perfect moment to relaxed your mind.',
+                author: 'Nicole Mora',
+                role: lang === 'es' ? 'Salud & Desconexión' : 'Wellness & Mental Health',
+                highlight: lang === 'es' ? 'Bienestar Mental' : 'Mindset Relief'
+              }
+            ].map((voice, vIdx) => (
+              <motion.div
+                key={vIdx}
+                variants={fadeInUp}
+                whileHover={{ y: -4 }}
+                className="p-6 rounded-3xl bg-white dark:bg-[#14161B] border border-gray-200 dark:border-white/10 shadow-md flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="px-2.5 py-0.5 rounded-full bg-[#FF4900]/10 text-[#FF4900] text-[10px] font-mono font-bold uppercase tracking-wider">
+                      {voice.highlight}
+                    </span>
+                    <MessageSquare className="w-3.5 h-3.5 text-gray-400" />
+                  </div>
+                  <p className="text-xs text-gray-700 dark:text-gray-300 italic leading-relaxed mb-4">
+                    "{voice.quote}"
+                  </p>
+                </div>
+                <div className="pt-3 border-t border-gray-100 dark:border-white/5 flex items-center justify-between">
+                  <div className="text-xs font-black text-gray-900 dark:text-white">
+                    {voice.author}
+                  </div>
+                  <div className="text-[10px] text-gray-400 font-mono">
+                    {voice.role}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+
       </motion.section>
 
       {/* SECTION 4.15: 18. TESTIMONIOS & SOCIAL PROOF B2B */}
@@ -4538,61 +4765,6 @@ export default function RoomForSportDribbble() {
                 <X className="w-4 h-4" />
               </button>
 
-              {/* 0. MODAL: CINEMA BRAND FILM PLAYER */}
-              {activeModal === 'brandFilm' && (
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FF4900]/10 text-[#FF4900] text-xs font-bold uppercase tracking-wider">
-                      <Sparkles className="w-3.5 h-3.5" /> {lang === 'es' ? 'Corto Corporativo Room for Sport' : 'Room for Sport Brand Film'}
-                    </div>
-                    <span className="text-[10px] font-mono uppercase font-bold text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-white/10 px-2.5 py-0.5 rounded-full">
-                      {lang === 'es' ? '4K Ultra HD • En Oficina' : '4K Ultra HD • In-Office'}
-                    </span>
-                  </div>
-
-                  <div>
-                    <h3 id="modal-title" className="text-2xl sm:text-3xl font-black text-gray-900 dark:text-white tracking-tight leading-tight">
-                      {lang === 'es' ? 'The Shift: De la Pantalla a la Cancha' : 'The Shift: From Screen to Court'}
-                    </h3>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">
-                      {lang === 'es' 
-                        ? 'Erradicar el agotamiento frente a las pantallas y transformar la fatiga en energía deportiva dentro del propio edificio corporativo.'
-                        : 'Eliminating screen fatigue and transforming exhaustion into athletic energy right inside your corporate headquarters.'}
-                    </p>
-                  </div>
-
-                  {/* Cinema High-Res Video Container */}
-                  <div className="relative rounded-2xl overflow-hidden bg-black aspect-video shadow-2xl border border-black/10 group">
-                    <video
-                      autoPlay
-                      controls
-                      playsInline
-                      className="w-full h-full object-cover"
-                      src="/videos/basketball-loop.webm"
-                    />
-                  </div>
-
-                  <div className="p-4 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
-                    <div>
-                      <div className="font-extrabold text-gray-900 dark:text-white">
-                        {lang === 'es' ? '¿Quieres instalar una sala o cancha en tu empresa?' : 'Want to install a modular studio or court in your office?'}
-                      </div>
-                      <div className="text-gray-500 dark:text-gray-400 text-[11px]">
-                        {lang === 'es' ? 'Diseño llave en mano, suelo técnico fonoabsorbente e insonorización certificada.' : 'Turnkey design, acoustic vibration-damping flooring, and certified soundproofing.'}
-                      </div>
-                    </div>
-                    <button
-                      onClick={() => setActiveModal('booking')}
-                      className="btn-tactile-orange shrink-0 cursor-pointer"
-                    >
-                      <span>{lang === 'es' ? 'Agendar Visita Técnica' : 'Schedule Technical Survey'}</span>
-                      <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center">
-                        <ArrowRight className="w-3.5 h-3.5" />
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              )}
 
               {/* 1. MODAL: AGENDAR VISITA TÉCNICA / DEMO */}
               {activeModal === 'booking' && (
@@ -4891,10 +5063,10 @@ export default function RoomForSportDribbble() {
               {activeModal === 'rooms' && (
                 <div className="space-y-5">
                   <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FF4900]/10 text-[#FF4900] text-xs font-bold uppercase tracking-wider">
-                    {lang === 'es' ? 'Modelos Arquitectónicos Modulares' : 'Modular Architectural Models'}
+                    {lang === 'es' ? 'Espacios Deportivos Modulares' : 'Modular Sports Studios'}
                   </div>
                   <h3 id="modal-title" className="text-2xl sm:text-3xl font-black text-gray-900 dark:text-white tracking-tight">
-                    {lang === 'es' ? 'Especificaciones Técnicas de las Salas' : 'Studio Technical Specifications'}
+                    {lang === 'es' ? 'Detalles de las Salas Deportivas' : 'Studio Details & Features'}
                   </h3>
                   <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
                     {lang === 'es'
@@ -5147,7 +5319,7 @@ export default function RoomForSportDribbble() {
                       <p className="text-gray-500 dark:text-gray-400 text-[11px]">
                         {lang === 'es' 
                           ? 'La app abre el torniquete o puerta electrónica de la sala y registra el aforo en tiempo real.' 
-                          : 'The app unlocks digital access gates and registers occupancy telemetrics in real time.'}
+                          : 'The app unlocks digital access gates and registers occupancy counts in real time.'}
                       </p>
                     </div>
 
@@ -5334,7 +5506,7 @@ export default function RoomForSportDribbble() {
                           <span className="font-extrabold text-xs">{lang === 'es' ? 'Atleta Individual' : 'Individual Athlete'}</span>
                           <span className="text-[10px] font-mono text-[#FF4900] font-bold">$15/mo</span>
                         </div>
-                        <p className="text-[10px] text-gray-500 dark:text-gray-400 line-clamp-1">{lang === 'es' ? 'Entrenamientos y marcas personales' : 'Personal workouts & telemetry'}</p>
+                        <p className="text-[10px] text-gray-500 dark:text-gray-400 line-clamp-1">{lang === 'es' ? 'Entrenamientos y marcas personales' : 'Personal workouts & progress'}</p>
                       </button>
 
                       <button

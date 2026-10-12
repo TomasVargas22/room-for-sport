@@ -4,30 +4,30 @@
 
 @layer base {
   :root {
-    /* 1. SEMANTIC DESIGN TOKENS (Color Hierarchy) */
-    --brand-primary: #FF4900;       /* High-energy athletic signature, strictly for primary CTAs */
-    --brand-accent: #CDFF00;        /* Neon lime: live telemetry, verified tags, active status */
-    --surface-canvas: #F8F9FA;      /* Editorial light canvas */
-    --surface-card: #FFFFFF;        /* Elevated card layer */
-    --surface-dark: #0F1012;        /* Dark bento & high-contrast nocturnal layer */
-    --surface-dark-card: #1A1C20;   /* Secondary dark elevated card layer */
+    /* Paleta de colores */
+    --brand-primary: #FF4900;       /* Naranja principal */
+    --brand-accent: #CDFF00;        /* Lima fluorescente */
+    --surface-canvas: #F8F9FA;      /* Fondo principal */
+    --surface-card: #FFFFFF;        /* Tarjetas */
+    --surface-dark: #0F1012;        /* Fondo oscuro */
+    --surface-dark-card: #1A1C20;   /* Tarjetas oscuras */
     
-    /* Typography & Contrast (Strict WCAG 2.1 AA/AAA compliance) */
-    --text-primary: #0A0B0D;        /* Ultra-dark text: 16.5:1 contrast on canvas (AAA) */
-    --text-secondary: #4B5160;      /* Slate charcoal: 6.2:1 contrast on canvas (AA) */
-    --text-muted: #646A7A;          /* Muted meta: 4.8:1 contrast on canvas (AA) */
+    /* Colores de texto */
+    --text-primary: #0A0B0D;
+    --text-secondary: #4B5160;
+    --text-muted: #646A7A;
     
-    --text-dark-primary: #FFFFFF;   /* 18.2:1 contrast on dark surface (AAA) */
-    --text-dark-secondary: #D1D5DB; /* 10.4:1 contrast on dark surface (AAA) */
-    --text-dark-muted: #9CA3AF;     /* 5.6:1 contrast on dark surface (AA) */
+    --text-dark-primary: #FFFFFF;
+    --text-dark-secondary: #D1D5DB;
+    --text-dark-muted: #9CA3AF;
 
-    /* Focus & Borders */
+    /* Bordes y foco */
     --border-subtle: rgba(10, 11, 13, 0.08);
     --border-dark: rgba(255, 255, 255, 0.1);
     --ring-focus: #FF4900;
   }
 
-  /* 15. DARK MODE THEME SYSTEM */
+  /* Modo oscuro */
   .dark {
     --surface-canvas: #0A0B0E;
     --surface-card: #14161B;
@@ -169,7 +169,7 @@
     border: 1px solid rgba(0, 0, 0, 0.06);
   }
 
-  /* Tactile Button-in-Button Classes */
+  /* Estilos de botones */
   .btn-tactile-orange {
     position: relative;
     display: inline-flex;
